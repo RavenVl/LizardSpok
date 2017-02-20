@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript"
+            src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/forstep.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#go').on('click', Step);
+            WaitForStep();
+
+
+        });
+    </script>
+</head>
+<body>
+Game eval
+<form action="../php/game.php" method="post">
+    <?=$roomId?>
+    <input type="hidden" name="room" value="<?=$roomId?>">
+    <input type="hidden" name="idBack" value="3">
+    <button  id="back">Back</button>
+</form>
+<div class="step">
+    <div id="time">
+
+    </div>
+    <form action="step.php" method="get">
+        <input id ="player" type="hidden" name="player" value="1">
+        <p><b>Select figur:</b><Br>
+            <input type="radio" name="figur" value="1">1. Stone<Br>
+            <input type="radio" name="figur" value="2">2. Scissors <Br>
+            <input type="radio" name="figur" value="3">3. Paper<Br>
+            <input type="radio" name="figur" value="4">4. Lizard<Br>
+            <input type="radio" name="figur" value="5">5. Spok<Br>
+        </p>
+
+    </form>
+    <button id="go">Go</button>
+
+</div>
+<div class="game">
+
+</div>
+
+<div class="itog">
+
+</div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript"
+            src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/foruser.js"></script>
+    <script type="text/javascript" src="/js/forroom.js"></script>
+    <script type="text/javascript" charset="utf-8">
+        $(document).ready(function(){
+
+            WaitForUser();
+            WaitForRoom();
+        });
+
+    </script>
+    <!--<link rel="stylesheet" href="../css/mmm1.css">-->
+</head>
+<body>
+game html<br>
+<a href="http://longpool.local/index.php?logout=1">logout</a>
+<div class="left">
+    <?=$name?>
+
+    <form action="../php/gamerun.php" method="post">
+        room name: <input   type="text" name="roomname" /><br /><br />
+        <input type="text" name="time" id="time" value="5">
+        <input  type="submit" value="Create" />
+    </form>
+</div>
+
+<div class="centr">
+    <ul id="users">
+        <li>1</li>
+    </ul>
+
+</div>
+<div class="right">
+    <ul id="rooms">
+        <li>1</li>
+    </ul>
+
+</div>
+</body>
+</html>
