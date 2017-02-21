@@ -33,6 +33,26 @@ class Db
 
     }
 
+    function getHint($roomId){
+        $curStep =$this->getCurStep($roomId);
+        $sql = "SELECT * FROM `games` WHERE IDroom = $roomId AND step =$curStep";
+        $stmt = $this->pdo->query($sql);
+        $row = $stmt->fetch(PDO::FETCH_OBJ);
+        $pl2 = $row->waypl2;
+        return $pl2;
+        
+    }
+
+    function getHint2($roomId){
+        $curStep =$this->getCurStep($roomId);
+        $sql = "SELECT * FROM `games` WHERE IDroom = $roomId AND step =$curStep";
+        $stmt = $this->pdo->query($sql);
+        $row = $stmt->fetch(PDO::FETCH_OBJ);
+        $pl1 = $row->waypl1;
+        return $pl1;
+
+    }
+    
     function getItogStep($roomId){
         $sql = "SELECT * FROM `games` WHERE IDroom = " . $roomId ." order BY step DESC LIMIT 1";
         $stmt = $this->pdo->query($sql);
@@ -176,7 +196,7 @@ class Db
     function createRoom($userId, $roomname, $maxtime){
         $sql="INSERT INTO rooms (ID, name, IDplayer1, IDplayer2, IDstatus, maxtime) VALUES (NULL, '$roomname' , $userId, null, 1, $maxtime);";
        // $sql="INSERT INTO rooms (ID, name, IDplayer1, IDplayer2, IDstatus) VALUES (NULL, '123', '1', NULL, '1');";
-        echo $sql;
+        //echo $sql;
         $result=$this->pdo->exec($sql);
         //echo $result;
     }

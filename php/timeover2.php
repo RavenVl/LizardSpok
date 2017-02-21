@@ -14,6 +14,7 @@ $itog = $db->getItog($roomId);
 if($itog>0){
     $temp="i" . strval($itog). ";" . $game;
     $rez=json_encode($temp);
+    setcookie("trueExit", true, time()+900);
 }
 else
     $rez =json_encode($game);

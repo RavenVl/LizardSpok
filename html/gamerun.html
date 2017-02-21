@@ -12,23 +12,28 @@
 
     });
     </script>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-<div>
-    Game run
+<main class="gamerun">
+    <div>
+       <h2>Wait competitors </h2>
 
-</div>
-<form action="../php/game.php" method="post">
-    <input type="hidden" name="idBack" value="1">
-    <button  id="back">Back</button>
-</form>
-<div>
-    <form action="../php/gameEval.php" method="post">
-        <input id="user2" type="text" name="idRun" value=<?=$roomId?>
-        <input type="hidden" name="start" value="1">
-        <button  style="display: none" id="run">Run</button>
+    </div>
+    <form action="../php/game.php" method="post">
+        <input type="hidden" name="idBack" value="1">
+        <button class="vhod" id="back">Back</button>
     </form>
+    <div>
+        <h2>Rooms number</h2>
+        <form action="../php/gameEval.php" method="post">
+            <input class="form-inp" id="user2" type="text" name="idRun" value=<?=$roomId?> disabled="disabled">
+            <input type="hidden" name="start" value="1">
+            <button class="vhod" style="display: none" id="run">Run</button>
+        </form>
 
-</div>
+    </div>
+</main>
+
 </body>
 </html>

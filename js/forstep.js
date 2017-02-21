@@ -11,8 +11,8 @@ function WaitForStep()
             $('#time').html(json[0]);
 
            if(json[0] < json[1]){
-               //setTimeout('WaitForStep()',1000);
-               WaitForStep();
+               setTimeout('WaitForStep()',100);
+              // WaitForStep();
            }
             else if(json[0] == json[1]){
                let room = $('#room').val();
@@ -29,7 +29,7 @@ function WaitForStep()
                           
                            var buf = '';
                            for(let i = 0; i<games.length; i++){
-                               let game ='<div>'+games[i]+'</div>';
+                               let game ='<div>'+strOut(games[i])+'</div>';
                                buf+=game;
 
                            }
@@ -39,10 +39,16 @@ function WaitForStep()
                        else{
                            var buf = '';
                            for(let i = 1; i<games.length; i++) {
-                               let game = '<div>' + games[i] + '</div>';
+                               let game = '<div>' + strOut(games[i]) + '</div>';
+                               //let game = '<div>' + games[i] + '</div>';
                                buf += game;
                            }
-                           buf += 'FINISH!!!! WIN Player' + json[1] + '<br>';
+                           if(json[1]==1){
+                               buf += 'FINISH!!!!  YOU WIN!!! ' + '<br>';
+                           }
+                           else{
+                               buf += 'FINISH!!!!  YOU LOSE!!! ' + '<br>';
+                           }
                            $('.itog').html(buf);
                        }
                    },
@@ -87,21 +93,39 @@ function Step() {
         }
 
     });
-    // $.ajax({
-    //     method: "POST",
-    //     url: 'step.php',
-    //     data: {player: player, room: room, figur: figur },
-    //     async: true,
-    //     cache: false,
-    //     success: function(data){
-    //         let gson = data;
-    //         $('#go').fadeOut();
-    //     },
-    //
-    //     error: function(XMLHttpRequest, textStatus, errorThrown){
-    //
-    //         // alert("Error: " + textStatus + "(" + errorThrown +")");
-    //     }
-    //
-    // });
+
+}
+
+function Hint() {
+    $.ajax({
+        method: "POST",
+        url: 'hint.php',
+        async: true,
+        cache: false,
+        success: function(data){
+            var json = JSON.parse(data);
+            $('#hintout').append( 'Competitor did step figur:  ' + json);
+            $('#hint').css('display','none');
+        },
+
+        error: function(XMLHttpRequest, textStatus, errorThrown){
+
+            // alert("Error: " + textStatus + "(" + errorThrown +")");
+        }
+
+    });
+}
+
+function strOut(str) {
+    if(str==='') return'';
+    var mas = str.split(" ");
+
+    rez = `Step: ${mas[0]}  You made figure: ${mas[1]}    Your oponet made figure: ${mas[2]}`;
+    if(mas[3]==1){
+        rez+=" You  WIN!!!";
+    }
+    else{
+        rez+=" You  LOSE!!!";
+    }
+    return rez;
 }

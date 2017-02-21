@@ -1,0 +1,203 @@
+
+html {
+    display: flex;
+    justify-content: center;
+
+    background: lightgray;
+}
+
+body {
+    margin-top: 50px;
+
+    color:azure;
+    width: 800px;
+    height: 400px;
+    background: lightseagreen;
+    border: 6px solid rgb(55, 113, 155);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+header{
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+}
+main{
+    display: flex;
+
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+main.game{
+    display: flex;
+
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.head-h2{
+    margin-left: -150px;
+}
+
+.name {
+    position: fixed;
+    display: inline;
+    margin-left: 180px;
+    font-size: 42px;
+    font-family: "Calisto MT", Serif;
+    color: azure;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+.left, .centr, .right{
+    margin-left: 20px;
+    display: block;
+}
+.right{
+    margin-right: 10px;
+    width: 280px;
+
+
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.login, .create, .room{
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    color: rgb(55,113,155);
+    border: 2px solid rgb(55,113,155);
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    border-radius: 10px;
+
+}
+.login{
+    margin-top: 50px;
+    text-align: center;
+    background: lightcyan;
+
+}
+.room{
+    margin-top: 20px;
+    text-align: center;
+    background: lightcyan;
+}
+.create{
+    margin-top: 20px;
+    text-align: center;
+    background: skyblue;
+    color: #ffffff;
+}
+.create, .create:active, .create:focus{
+    outline: none;
+}
+.create:active{
+    background: steelblue;
+}
+
+.centr{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100px;
+    height: auto;
+    background: lightcyan;
+    padding-right: 40px;
+    font-size: 24px;
+    color: rgb(55,113,155);
+    border: 2px solid rgb(55,113,155);
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    margin-left: 60px;
+}
+li{
+    list-style-type: none;
+}
+
+head{
+    display: inline-flex;
+}
+
+.text{
+    padding: 5px;
+    margin-top:  15px;
+    width: 330px;
+    height: 30px;
+    background: lightcyan;
+    font-size: 16px;
+    color: rgb(55,113,155);
+    border: 2px solid rgb(55,113,155);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+.vhod {
+
+    margin-bottom: 15px;
+    margin-top: 15px;
+    width: 70px;
+    height: 35px;
+    font-size: 16px;
+    color: #ffffff;
+    border: 2px solid rgb(55,113,155);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    background: skyblue;
+}
+.vhod, .vhod:focus, .vhod:active{
+    outline: none;
+
+}
+.vhod:active{
+    background: steelblue;
+}
+
+.form-inp{
+    padding: 5px;
+    width: 150px;
+    height: 25px;
+    background: lightcyan;
+    font-size: 16px;
+    color: rgb(55,113,155);
+    border: 2px solid rgb(55,113,155);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.span-form{
+    display: block;
+    margin:15px 0 10px;
+}
+
+.gamerun{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.game-left{
+    width: 200px;
+    height: 100%;
+    margin-left: 20px;
+}
+
+.game-right{
+    width: 700px;
+    height: 100%;
+}
+
+.roomid{
+    font-size: 16px;
+    color: #ffffff;
+}
+
+#time{
+    font-size: 28px;
+    color: #ffffff;
+    height: 35px;
+}

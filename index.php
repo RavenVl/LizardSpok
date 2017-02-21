@@ -8,27 +8,47 @@ if ( !$user->is_loaded() )
 {
 	//Login stuff:
 	if ( isset($_POST['uname']) && isset($_POST['pwd'])){
-	  if ( !$user->login($_POST['uname'],$_POST['pwd'],$_POST['remember'] )){//Mention that we don't have to use addslashes as the class do the job
+	  if ( !$user->login($_POST['uname'],$_POST['pwd'],$_POST['remember'] )){
 	    echo 'Wrong username and/or password';
 	  }else{
 	    //user is now loaded
 	    header('Location: http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF']);
 	  }
 	} ?>
-	<h1>Login</h1>
-	<p><form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" />
-	  username: <input type="text" name="uname" /><br /><br />
-  	  password: <input type="password" name="pwd" /><br /><br />
-	  Remember me? <input type="checkbox" name="remember" value="1" /><br /><br />
-	  <input type="submit" value="login" />
-	</form>
-	</p>
+	<head>
+		<link rel="stylesheet" href="/css/stylein.css">
+	</head>
+	<h1 class="name">Login</h1>
+	<div class="enter">
+		<form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" />
+		<h3>User</h3>
+		<input class="uname" type="text" name="uname"/>
+		<h3>Password</h3>
+		<input class="pwd" type="password" name="pwd"/>
+		<!--	  Remember me? <input type="checkbox" name="remember" value="1" /><br /><br />-->
+		<input class="login" type="submit" value="login" />
+		</form>
+
+	</div>
+
 	<?php
 }else {
 	//User is loaded
 	?>
-	  <a href="http://longpool.local/index.php?logout=1">logout</a>
-	<a href="php/game.php">Game</a>
+	<head>
+		<link rel="stylesheet" href="/css/stylein.css">
+	</head>
+	<h2>Welcome!</h2>
+	<main>
+		<div class="link-box">
+			<a href="http://longpool.local/index.php?logout=1">Logout</a>
+		</div>
+		<div class="link-box">
+			<a href="php/game.php">Game</a>
+		</div>
+	</main>
+	
+	
 	<?php
 //	header('Location: game.php');
 //	exit;
