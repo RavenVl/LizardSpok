@@ -1,13 +1,6 @@
 <?php
-require_once 'access.class.php';
-require_once 'Db.php';
+require_once 'init.php';
 
-$db = new Db();
-
-$user = new flexibleAccess();
-$name=$user->get_property('username');
-$userId = $user->get_property('userID');
-session_write_close();
 if($_POST['idBack']==1){
     $db->deleteRoom($userId);
     
