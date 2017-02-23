@@ -1,40 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54d1d44a-b963-4f0a-9529-067757229ac7" name="Default" comment="23 16.00">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/longpool.local.iml" afterPath="$PROJECT_DIR$/.idea/longpool.local.iml" />
+    <list default="true" id="54d1d44a-b963-4f0a-9529-067757229ac7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/stylein.css" afterPath="$PROJECT_DIR$/css/stylein.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/game.html" afterPath="$PROJECT_DIR$/html/game.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/gameEval.html" afterPath="$PROJECT_DIR$/html/gameEval.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/gamerun.html" afterPath="$PROJECT_DIR$/html/gamerun.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/gamerun2.html" afterPath="$PROJECT_DIR$/html/gamerun2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/step.html" afterPath="$PROJECT_DIR$/html/step.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/forgame.js" afterPath="$PROJECT_DIR$/js/forgame.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/forroom.js" afterPath="$PROJECT_DIR$/js/forroom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/forstep.js" afterPath="$PROJECT_DIR$/js/forstep.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/forstep2.js" afterPath="$PROJECT_DIR$/js/forstep2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/foruser.js" afterPath="$PROJECT_DIR$/js/foruser.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/foruser2.js" afterPath="$PROJECT_DIR$/js/foruser2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/Db.php" afterPath="$PROJECT_DIR$/php/Db.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/access.class.php" afterPath="$PROJECT_DIR$/php/access.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/game.php" afterPath="$PROJECT_DIR$/php/game.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/gameComet.php" afterPath="$PROJECT_DIR$/php/gameComet.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/gamerun.php" afterPath="$PROJECT_DIR$/php/gamerun.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/gamerun2.php" afterPath="$PROJECT_DIR$/php/gamerun2.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/hint.php" afterPath="$PROJECT_DIR$/php/hint.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/hint2.php" afterPath="$PROJECT_DIR$/php/hint2.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/roomComet.php" afterPath="$PROJECT_DIR$/php/roomComet.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/step.php" afterPath="$PROJECT_DIR$/php/step.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/stepComet.php" afterPath="$PROJECT_DIR$/php/stepComet.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/stepComet2.php" afterPath="$PROJECT_DIR$/php/stepComet2.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/timeover.php" afterPath="$PROJECT_DIR$/php/timeover.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/timeover2.php" afterPath="$PROJECT_DIR$/php/timeover2.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/user2Comet.php" afterPath="$PROJECT_DIR$/php/user2Comet.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/userComet.php" afterPath="$PROJECT_DIR$/php/userComet.php" />
     </list>
     <ignored path="longpool.local.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -533,7 +501,7 @@
       <workItem from="1487846406289" duration="153000" />
       <workItem from="1487846577867" duration="223000" />
       <workItem from="1487846815775" duration="32000" />
-      <workItem from="1487847100907" duration="2109000" />
+      <workItem from="1487847100907" duration="2125000" />
     </task>
     <task id="LOCAL-00001" summary="23 14.00">
       <created>1487848148980</created>
@@ -542,11 +510,18 @@
       <option name="project" value="LOCAL" />
       <updated>1487848148980</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="23 16.00">
+      <created>1487856655941</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1487856655941</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="169658000" />
+    <option name="totallyTimeSpent" value="169674000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
