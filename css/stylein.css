@@ -1,12 +1,12 @@
 
- html {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     background: lightgray;
- }
+html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: lightgray;
+}
 
-body{
+body {
     margin-top: 50px;
     display: flex;
     flex-direction: column;
@@ -14,78 +14,83 @@ body{
     width: 600px;
     height: 400px;
     background: lightseagreen;
-    border: 6px solid rgb(55,113,155);
-    box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+    border: 6px solid rgb(55, 113, 155);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
 }
 
-
-
-.name{
+.name {
     font-size: 42px;
     font-family: "Calisto MT", Serif;
     color: azure;
-    text-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
-.enter{
+
+.enter {
 
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items:center;
+    align-items: center;
     width: 300px;
     height: 250px;
     background: lightcyan;
-    border: 2px solid rgb(55,113,155);
-    box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+    border: 2px solid rgb(55, 113, 155);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
-    line-height:50%;
+    line-height: 50%;
 }
-.user, .pass{
-    display:block;
+
+.user, .pass {
+    display: block;
     margin-top: -10px;
 
 }
-.uname, .pwd, .login{
-    margin-top:10px;
+
+.uname, .pwd, .login {
+    margin-top: 10px;
     display: block;
     width: 200px;
     height: 30px;
     font-size: 24px;
-    color: rgb(55,113,155);
-    border: 2px solid rgb(55,113,155);
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    color: rgb(55, 113, 155);
+    border: 2px solid rgb(55, 113, 155);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     padding-left: 20px;
 }
- .login{
-     margin-top: 30px;
-     text-align: center;
-     background: skyblue;
-     color: #ffffff;
-     height: 35px;
-     padding-left: 0px;
- }
- .login, .login:active, .login:focus{
-     outline: none;
 
- }
- .login:active{
-     background: steelblue;
- }
- .uname, .pwd, .uname:focus, .pwd:focus{
-     outline: none;
- }
+.login {
+    margin-top: 30px;
+    text-align: center;
+    background: skyblue;
+    color: #ffffff;
+    height: 35px;
+    padding-left: 0px;
+}
 
- main{
-     display: flex;
-     flex-direction: column;
-     justify-content: space-around;
- }
+.login, .login:active, .login:focus {
+    outline: none;
 
- .link-box{
-     height: 30px;
-     font-size: 36px;
-     margin-top: 20px;
-     margin-bottom: 30px;
- }
+}
+
+.login:active {
+    background: steelblue;
+}
+
+.uname, .pwd, .uname:focus, .pwd:focus {
+    outline: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.link-box {
+    height: 30px;
+    font-size: 36px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}

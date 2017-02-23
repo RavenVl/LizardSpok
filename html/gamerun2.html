@@ -7,7 +7,7 @@
             src="/bower_components/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="/js/forstep2.js"></script>
     <script>
-        $(document).ready(function(){
+        $(document).ready(function () {
             $('#go').on('click', Step);
             $('#hint').on('click', Hint);
             WaitForStep2();
@@ -20,7 +20,7 @@
     <div class="game-left">
         <form action="../php/game.php" method="post">
             <div class="roomid">
-                You connect to  room - <?=$roomId?>
+                You connect to room - <?=$roomId?>
             </div>
             <input type="hidden" name="room" value="<?=$roomId?>">
             <input type="hidden" name="idBack" value="3">
@@ -32,7 +32,7 @@
 
             </div>
             <form action="step.php" method="get">
-                <input id ="player" type="hidden" name="player" value="2">
+                <input id="player" type="hidden" name="player" value="2">
                 <p><b>Select figur:</b><Br>
                     <input type="radio" name="figur" value="1">1. Stone<Br>
                     <input type="radio" name="figur" value="2">2. Scissors <Br>
@@ -42,7 +42,7 @@
                 </p>
 
             </form>
-            <button  class="vhod" id="go">Go</button>
+            <button class="vhod" id="go">Go</button>
             <button class="vhod" id="hint">Hint</button>
             <div id="hintout">
 

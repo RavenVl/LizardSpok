@@ -7,7 +7,7 @@
             src="/bower_components/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="/js/forstep.js"></script>
     <script>
-        $(document).ready(function(){
+        $(document).ready(function () {
             $('#go').on('click', Step);
             $('#hint').on('click', Hint);
             WaitForStep();
@@ -19,53 +19,53 @@
 </head>
 <body>
 <main class="game">
-<div class="game-left">
-    <form action="../php/game.php" method="post">
-        <div class="roomid">
-            You made room - <?=$roomId?>
-        </div>
-        <input type="hidden" name="room" value="<?=$roomId?>">
-        <input type="hidden" name="idBack" value="3">
-        <button class="vhod" id="back">Back</button>
-    </form>
-    <div class="step">
-        <div><span>Time to end step:</span></div>
-        <div id="time">
-
-        </div>
-        <form action="step.php" method="get">
-            <input id ="player" type="hidden" name="player" value="1">
-            <p><b>Select figur:</b><Br>
-                <input type="radio" name="figur" value="1">1. Stone<Br>
-                <input type="radio" name="figur" value="2">2. Scissors <Br>
-                <input type="radio" name="figur" value="3">3. Paper<Br>
-                <input type="radio" name="figur" value="4">4. Lizard<Br>
-                <input type="radio" name="figur" value="5">5. Spok<Br>
-            </p>
-
+    <div class="game-left">
+        <form action="../php/game.php" method="post">
+            <div class="roomid">
+                You made room - <?=$roomId?>
+            </div>
+            <input type="hidden" name="room" value="<?=$roomId?>">
+            <input type="hidden" name="idBack" value="3">
+            <button class="vhod" id="back">Back</button>
         </form>
-        <button  class="vhod" id="go">Go</button>
-        <button class="vhod" id="hint">Hint</button>
-        <div id="hintout">
+        <div class="step">
+            <div><span>Time to end step:</span></div>
+            <div id="time">
+
+            </div>
+            <form action="step.php" method="get">
+                <input id="player" type="hidden" name="player" value="1">
+                <p><b>Select figur:</b><Br>
+                    <input type="radio" name="figur" value="1">1. Stone<Br>
+                    <input type="radio" name="figur" value="2">2. Scissors <Br>
+                    <input type="radio" name="figur" value="3">3. Paper<Br>
+                    <input type="radio" name="figur" value="4">4. Lizard<Br>
+                    <input type="radio" name="figur" value="5">5. Spok<Br>
+                </p>
+
+            </form>
+            <button class="vhod" id="go">Go</button>
+            <button class="vhod" id="hint">Hint</button>
+            <div id="hintout">
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="game-right">
+
+        Game eval
+
+        <div class="game">
 
         </div>
-</div>
 
+        <div class="itog">
 
-</div>
-
-<div class="game-right">
-
-    Game eval
-
-    <div class="game">
-
+        </div>
     </div>
-
-    <div class="itog">
-
-    </div>
-</div>
 </main>
 </body>
 </html>

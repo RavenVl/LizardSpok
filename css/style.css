@@ -9,7 +9,7 @@ html {
 body {
     margin-top: 50px;
 
-    color:azure;
+    color: azure;
     width: 800px;
     height: 400px;
     background: lightseagreen;
@@ -17,27 +17,29 @@ body {
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
 }
-header{
+
+header {
     display: flex;
 
     justify-content: space-around;
     align-items: center;
 }
-main{
+
+main {
     display: flex;
 
     justify-content: space-around;
     align-items: flex-start;
 }
 
-main.game{
+main.game {
     display: flex;
 
     justify-content: space-between;
     align-items: flex-start;
 }
 
-.head-h2{
+.head-h2 {
     margin-left: -150px;
 }
 
@@ -50,57 +52,64 @@ main.game{
     color: azure;
     text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
-.left, .centr, .right{
+
+.left, .centr, .right {
     margin-left: 20px;
     display: block;
 }
-.right{
+
+.right {
     margin-right: 10px;
     width: 280px;
 
-
-
 }
-form{
+
+form {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.login, .create, .room{
+
+.login, .create, .room {
     width: 100px;
     height: 30px;
     font-size: 16px;
-    color: rgb(55,113,155);
-    border: 2px solid rgb(55,113,155);
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    color: rgb(55, 113, 155);
+    border: 2px solid rgb(55, 113, 155);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
 
 }
-.login{
+
+.login {
     margin-top: 50px;
     text-align: center;
     background: lightcyan;
 
 }
-.room{
+
+.room {
     margin-top: 20px;
     text-align: center;
     background: lightcyan;
 }
-.create{
+
+.create {
     margin-top: 20px;
     text-align: center;
     background: skyblue;
     color: #ffffff;
 }
-.create, .create:active, .create:focus{
+
+.create, .create:active, .create:focus {
     outline: none;
 }
-.create:active{
+
+.create:active {
     background: steelblue;
 }
 
-.centr{
+.centr {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -109,32 +118,34 @@ form{
     background: lightcyan;
     padding-right: 40px;
     font-size: 24px;
-    color: rgb(55,113,155);
-    border: 2px solid rgb(55,113,155);
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    color: rgb(55, 113, 155);
+    border: 2px solid rgb(55, 113, 155);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     margin-left: 60px;
 }
-li{
+
+li {
     list-style-type: none;
 }
 
-head{
+head {
     display: inline-flex;
 }
 
-.text{
+.text {
     padding: 5px;
-    margin-top:  15px;
+    margin-top: 15px;
     width: 330px;
     height: 30px;
     background: lightcyan;
     font-size: 16px;
-    color: rgb(55,113,155);
-    border: 2px solid rgb(55,113,155);
+    color: rgb(55, 113, 155);
+    border: 2px solid rgb(55, 113, 155);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
 }
+
 .vhod {
 
     margin-bottom: 15px;
@@ -143,60 +154,62 @@ head{
     height: 35px;
     font-size: 16px;
     color: #ffffff;
-    border: 2px solid rgb(55,113,155);
+    border: 2px solid rgb(55, 113, 155);
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     background: skyblue;
 }
-.vhod, .vhod:focus, .vhod:active{
+
+.vhod, .vhod:focus, .vhod:active {
     outline: none;
 
 }
-.vhod:active{
+
+.vhod:active {
     background: steelblue;
 }
 
-.form-inp{
+.form-inp {
     padding: 5px;
     width: 150px;
     height: 25px;
     background: lightcyan;
     font-size: 16px;
-    color: rgb(55,113,155);
-    border: 2px solid rgb(55,113,155);
+    color: rgb(55, 113, 155);
+    border: 2px solid rgb(55, 113, 155);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
 }
 
-.span-form{
+.span-form {
     display: block;
-    margin:15px 0 10px;
+    margin: 15px 0 10px;
 }
 
-.gamerun{
+.gamerun {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:center;
+    align-items: center;
 }
 
-.game-left{
+.game-left {
     width: 200px;
     height: 100%;
     margin-left: 20px;
 }
 
-.game-right{
+.game-right {
     width: 700px;
     height: 100%;
 }
 
-.roomid{
+.roomid {
     font-size: 16px;
     color: #ffffff;
 }
 
-#time{
+#time {
     font-size: 28px;
     color: #ffffff;
     height: 35px;

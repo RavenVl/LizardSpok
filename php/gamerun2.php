@@ -1,7 +1,7 @@
 <?php
 require_once 'init.php';
 $roomId = $db->getRoomByUser($userId);
-if($_COOKIE["trueExit"] = false){
+if ($_COOKIE["trueExit"] = false) {
     header('Location: game.php');
 }
 $roomID = $_POST['idroom'];
