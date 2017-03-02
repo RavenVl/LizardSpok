@@ -40,7 +40,8 @@ if (!$user->is_loaded()) {
     <h2>Welcome!</h2>
     <main>
         <div class="link-box">
-            <a href="http://longpool.local/index.php?logout=1">Logout</a>
+<!--            <a href="http://longpool.local/index.php?logout=1">Logout</a>-->
+            <a href="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>?logout=1">Logout</a>
         </div>
         <div class="link-box">
             <a href="php/game.php">Game</a>

@@ -23,5 +23,7 @@ function WaitForGame() {
             setTimeout('WaitForGame()', 15000);
         }
 
+
     });
+
 }
